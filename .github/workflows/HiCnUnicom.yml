@@ -12,11 +12,6 @@ jobs:
     steps:
         - name: Checkout codes
           uses: actions/checkout@v2
-          
-        - name: 运行时间
-          run: |
-            time=$(curl -s "http://quan.suning.com/getSysTime.do")
-            echo -e "当前时间：\n${time}
             
         - name: 联通掌厅签到
           env:
